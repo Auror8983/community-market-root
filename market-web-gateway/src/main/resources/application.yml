@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: market-web-gateway
+
+dubbo:
+  application:
+    name: market-web-gateway
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: nacos://localhost:8848
+  consumer:
+    check: false
